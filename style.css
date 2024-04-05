@@ -4,6 +4,20 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+input{
+    width: 94.46%;
+    height: 22px;
+    padding: 0.93rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+}
+
+a{
+    color: #E9E9E9;
+    font-size: 0.8rem;
+}
 .container{
     background-color: #E9E9E9;
     margin: auto;
@@ -13,8 +27,13 @@ body{
     overflow: hidden;
 }
 
+input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #008B8A;
+}
+
 .header{
-    padding: 2.5rem;
+    padding: 0.93rem;
 }
 
 .flex-container{
@@ -62,7 +81,7 @@ body{
     margin-left: 0.93rem;
 }
 
-.button{
+button{
     width: 100%;
     padding: 0.93rem 2rem;
     color: #006969;
@@ -89,6 +108,15 @@ body{
     text-align: center;
 }
 
+.form-register{
+    background-color: #006969;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
 @media screen and (max-width: 620px) {
     html{
         font-size: 14px;
@@ -105,5 +133,9 @@ body{
 
     .container{
         width: 95%;
+    }
+
+    .header{
+        padding: 15px;
     }
 }
